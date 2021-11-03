@@ -1,0 +1,178 @@
+<head>
+
+    <link rel="stylesheet" href="css/reset_css.css" type="text/css">
+    <link rel="stylesheet" href="css/common_css.css" type="text/css">
+    <link rel="stylesheet" href="css/BRANDSTORY.css" type="text/css">
+
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.js"></script>
+    <script>
+        $(function() {
+            $(".menubar").click(function(){
+                $(".menu").fadeIn();
+                $(".menu_exit").fadeIn();
+                $(".menu_button").hide();
+                $not(".menu").hide();
+            });
+
+            $(".menu_exit").click(function(){
+                $(".menu").hide();
+                $(".menu_exit").hide();
+                $(".menu_button").fadeIn();
+                
+            });
+        });
+
+        $(function(){
+            $("#about button:nth-of-type(1)").click(function(){
+                $("#about iframe:nth-of-type(1)").fadeIn();
+                $("#about iframe:nth-of-type(2)").hide();
+                $("#about iframe:nth-of-type(3)").hide();
+            });
+            $("#about button:nth-of-type(2)").click(function(){
+                $("#about iframe:nth-of-type(2)").fadeIn();
+                $("#about iframe:nth-of-type(1)").hide();
+                $("#about iframe:nth-of-type(3)").hide();
+            });
+            $("#about button:nth-of-type(3)").click(function(){
+                $("#about iframe:nth-of-type(3)").fadeIn();
+                $("#about iframe:nth-of-type(2)").hide();
+                $("#about iframe:nth-of-type(1)").hide();
+            });
+        });
+    </script>
+
+</head>
+
+
+
+
+<body>
+    <header>
+        <div class="logo"><a href="#"><img src="img/common/main_logo.png" alt="main_logo"></a></div>
+
+        <div class="sns">
+            <a href="#"><img src="img/common/facebook.png" alt="facebook"></a>
+            <a href="#"><img src="img/common/instagram.png" alt="insta"></a>
+            <a href="#"><img src="img/common/Twitter.png" alt="Twitter"></a>
+            <a href="#"><img src="img/common/Youtube.png" alt="Youtube"></a>
+        </div>
+        
+        <div class="seach">
+            <input type="text"><button><img src="img/common/seach.png" alt="seach_icon"></button>
+        </div>
+
+        <div class="menubar"><button class="menu_button"><img src="img/common/menubar.JPG" alt="menubar"></button></div>
+        <div class="menu_exit"><button class="menu_exit_button"><img src="img/common/menu_exit.JPG" alt="menu_exit"></button></div>
+    </header>
+      <div class="menu">
+        <nav>
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">BRAND STORY</a></li>
+                <li><a href="#">PRODUCT</a></li>
+                <li><a href="#">EVENT</a></li>
+            </ul>
+        </nav>
+    </div>
+
+
+    <div id="about">
+        <p>About</p>
+        <hr class="about">
+        <h2>570년 역사를 이어 온<br>
+            정통 오리지널 벨기에 밀맥주<br>
+            호가든</h2>
+        <hr class="about_img">
+        <iframe width="1500" height="800" src="https://www.youtube.com/embed/GmKcSJq5vUk" 
+        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
+        clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="1500" height="800" src="https://www.youtube.com/embed/aLXMHatmx14" 
+        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
+        clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="1500" height="800" src="https://www.youtube.com/embed/Jf7EibclMHo" 
+        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
+        clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <button><img src="img/BRAND STORY/main1.jpeg" alt=""></button>
+        <button><img src="img/BRAND STORY/main2.jpeg" alt=""></button>
+        <button><img src="img/BRAND STORY/main3.jpeg" alt=""></button>
+    </div>
+
+    <div id="story">
+    
+      
+    </div>
+
+    <div id="history">
+        <p class="ou">our history</p>
+        <hr class="our">
+        <h2>570년 역사를 이어 온<br>
+            정통 오리지널 벨기에 밀맥주,<br>
+             호가든</h2>
+        <hr class="history">
+        <p class="year1">1445</p> 
+        <hr class="year1-">
+        <p class="year2">1445</p> 
+        <hr class="year2-">
+        <p class="year3">1445</p> 
+        <hr class="year3-">
+        <p class="year4">1445</p> 
+        <hr class="year4-">
+        <section class="section1">
+            <h2>Restaurant opening</h2>
+            <hr>
+            <img src="img/BRAND STORY/Hoegaarden.jpg" alt="Hoegaarden">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus cras nibh tincidunt 
+                in penatibus amet faucibus quam. Habitant quam tellus arcu accumsan. Placerat 
+                condimentum tortor, dictumst augue varius. At lobortis nunc auctor nunc mi amet.</p>
+        </section>
+        <section class="section2">
+            <h2>Restaurant opening</h2>
+            <hr>
+            <img src="img/BRAND STORY/Hoegaarden.jpg" alt="Hoegaarden">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus cras nibh tincidunt 
+                in penatibus amet faucibus quam. Habitant quam tellus arcu accumsan. Placerat 
+                condimentum tortor, dictumst augue varius. At lobortis nunc auctor nunc mi amet.</p>
+        </section>
+        <section class="section3">
+            <h2>Restaurant opening</h2>
+            <hr>
+            <img src="img/BRAND STORY/PierreCelis.jpg" alt="Hoegaarden">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus cras nibh tincidunt 
+                in penatibus amet faucibus quam. Habitant quam tellus arcu accumsan. Placerat 
+                condimentum tortor, dictumst augue varius. At lobortis nunc auctor nunc mi amet.</p>
+        </section>
+        <section class="section4">
+            <h2>Restaurant opening</h2>
+            <hr>
+            <img src="img/BRAND STORY/brewery.jpg" alt="Hoegaarden">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus cras nibh tincidunt 
+                in penatibus amet faucibus quam. Habitant quam tellus arcu accumsan. Placerat 
+                condimentum tortor, dictumst augue varius. At lobortis nunc auctor nunc mi amet.</p>
+        </section>
+        <section class="today">
+            <h2>현재</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius
+                 enim in eros elementum tristique. Duis cursus, mi quis viverra ornare,
+                  eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean 
+                  faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae 
+                  risus tristique posuere.</p>
+            <hr>
+            <a href="#">Make a reservation →</a>
+            <img src="img/BRAND STORY/factory.jpg" alt="factory">
+        </section>
+    </div>
+
+
+    <footer>
+        <a href="index.html"><img src="img/common/main_logo.png" alt="under_logo"></a>
+        <p class="foot_name">
+         © HOEGAARDEN 2021. | All Rights Reserved. | Privacy Policy |  Terms and Conditions
+        </p><br>
+        <p>
+
+         부서명 : 정보전략팀 | 책임자 : 박찬주 CISO(Chief Information Security Officer) <br>
+         전화번호 : (02)2149-5000 | 이메일 : privacy@ob.co.kr <br><br>
+         경고: 지나친 음주는 뇌졸중, 기억력 손상이나 치매를 유발합니다. 임신 중 음주는 기형아 출생 위험을 높입니다. 만 19세 미만 컨텐츠 공유 금지.
+        </p>
+    </footer>
+</body>
