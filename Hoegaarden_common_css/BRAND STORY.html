@@ -23,20 +23,20 @@
         });
 
         $(function(){
-            $("#about button:nth-of-type(1)").click(function(){
-                $("#about iframe:nth-of-type(1)").fadeIn();
-                $("#about iframe:nth-of-type(2)").hide();
-                $("#about iframe:nth-of-type(3)").hide();
+            $(".today button:nth-of-type(1)").click(function(){
+                $(".today iframe:nth-of-type(1)").fadeIn();
+                $(".today iframe:nth-of-type(2)").hide();
+                $(".today iframe:nth-of-type(3)").hide();
             });
-            $("#about button:nth-of-type(2)").click(function(){
-                $("#about iframe:nth-of-type(2)").fadeIn();
-                $("#about iframe:nth-of-type(1)").hide();
-                $("#about iframe:nth-of-type(3)").hide();
+            $(".today button:nth-of-type(2)").click(function(){
+                $(".today iframe:nth-of-type(2)").fadeIn();
+                $(".today iframe:nth-of-type(1)").hide();
+                $(".today iframe:nth-of-type(3)").hide();
             });
-            $("#about button:nth-of-type(3)").click(function(){
-                $("#about iframe:nth-of-type(3)").fadeIn();
-                $("#about iframe:nth-of-type(2)").hide();
-                $("#about iframe:nth-of-type(1)").hide();
+            $(".today button:nth-of-type(3)").click(function(){
+                $(".today iframe:nth-of-type(3)").fadeIn();
+                $(".today iframe:nth-of-type(2)").hide();
+                $(".today iframe:nth-of-type(1)").hide();
             });
         });
     </script>
@@ -83,29 +83,49 @@
             정통 오리지널 벨기에 밀맥주<br>
             호가든</h2>
         <hr class="about_img">
-        <iframe width="1500" height="800" src="https://www.youtube.com/embed/GmKcSJq5vUk" 
-        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
-        clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <iframe width="1500" height="800" src="https://www.youtube.com/embed/aLXMHatmx14" 
-        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
-        clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <iframe width="1500" height="800" src="https://www.youtube.com/embed/Jf7EibclMHo" 
-        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
-        clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <button><img src="img/BRAND STORY/main1.jpeg" alt=""></button>
-        <button><img src="img/BRAND STORY/main2.jpeg" alt=""></button>
-        <button><img src="img/BRAND STORY/main3.jpeg" alt=""></button>
+        <img src="img/BRAND STORY/Hoegaarden.jpg" alt="">
     </div>
 
-    <div id="story">
-    
-      
+    <div id="shield_box">
+        <div class="shield">
+            <img src="img/BRAND STORY/or.png" alt="">
+            <div>
+                <h2> 여과를 거치지 않은 백색의 맥주를 만들어 냈습니다</h2>
+                <br><br>
+                <p>호가든은 맥주를 주조할 때에는 기본적으로
+                    물, 맥아, 효모, 홉만이 사용되어야 한다는 독일의 ‘맥주순수령’과는 달리
+                    허브, 과일 등을 사용해다양한 맛의 맥주를 개발한 벨기에의 사람들의
+                    창의성과 오랜 정통 기법의 만남으로 탄생했습니다.
+                    
+                    밀, 고수 씨앗, 그리고 오렌지 껍질을 사용해 완성된
+                    호가든만의 은은한 향과 구름 거품이 담긴 특유의
+                    부드럽고 풍성한 맛의 호가든을 즐겨보세요.</p>   
+            </div>   
+        </div>
+    </div>  
+    <div id="ingredient_box">
+        <div class="ingredient">
+            <img src="img/BRAND STORY/or.png" alt="">
+            <div>
+                <h2> 여과를 거치지 않은 백색의 맥주를 만들어 냈습니다</h2>
+                <br><br>
+                <p>호가든은 맥주를 주조할 때에는 기본적으로
+                    물, 맥아, 효모, 홉만이 사용되어야 한다는 독일의 ‘맥주순수령’과는 달리
+                    허브, 과일 등을 사용해다양한 맛의 맥주를 개발한 벨기에의 사람들의
+                    창의성과 오랜 정통 기법의 만남으로 탄생했습니다.
+                    
+                    밀, 고수 씨앗, 그리고 오렌지 껍질을 사용해 완성된
+                    호가든만의 은은한 향과 구름 거품이 담긴 특유의
+                    부드럽고 풍성한 맛의 호가든을 즐겨보세요.</p>   
+            </div>   
+        </div>
+    </div> 
     </div>
-
+<div id="history_box">
     <div id="history">
         <p class="ou">our history</p>
         <hr class="our">
-        <h2>570년 역사를 이어 온<br>
+        <h2 class="starte">570년 역사를 이어 온<br>
             정통 오리지널 벨기에 밀맥주,<br>
              호가든</h2>
         <hr class="history">
@@ -150,18 +170,32 @@
                 condimentum tortor, dictumst augue varius. At lobortis nunc auctor nunc mi amet.</p>
         </section>
         <section class="today">
-            <h2>현재</h2>
+            <h2>Present</h2>
+            <hr class="Present1"> <hr class="Present2">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius
                  enim in eros elementum tristique. Duis cursus, mi quis viverra ornare,
                   eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean 
                   faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae 
                   risus tristique posuere.</p>
-            <hr>
-            <a href="#">Make a reservation →</a>
-            <img src="img/BRAND STORY/factory.jpg" alt="factory">
+            <hr class="Make">
+            <p><strong>광고 골라보세요</strong></p>   
+            <button><img src="img/BRAND STORY/main1.jpeg" alt=""></button>
+            <button><img src="img/BRAND STORY/main2.jpeg" alt=""></button>
+            <button><img src="img/BRAND STORY/main3.jpeg" alt=""></button>
+
+            <iframe width="1500" height="800" src="https://www.youtube.com/embed/GmKcSJq5vUk" 
+            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
+            clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="1500" height="800" src="https://www.youtube.com/embed/aLXMHatmx14" 
+            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
+            clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="1500" height="800" src="https://www.youtube.com/embed/Jf7EibclMHo" 
+            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
+            clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+   
         </section>
     </div>
-
+</div>
 
     <footer>
         <a href="index.html"><img src="img/common/main_logo.png" alt="under_logo"></a>

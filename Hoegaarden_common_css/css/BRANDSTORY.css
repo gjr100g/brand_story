@@ -1,51 +1,72 @@
 @charset "UTF-8";
+@font-face{src: url(../Font/PinyonScript-Regular.ttf);font-family:"Blacksword";}
 *{color: #333;}
 hr{border:solid#333 1px;}
-#about{width: 100%; height: 1000px; margin: 0 auto; position: relative;}
+#about{width: 100%; height: 1200px; margin: 0 auto; position: relative;}
     #about p{text-align: center; font-size: 28px; margin: 160px 0 0 0 ;}
     .about{width: 25px; margin: 20px auto 20px auto}
     #about h2{text-align: center; font-size: 35px;}
     .about_img{height: 35px; width: 0; margin: 20px auto 20px auto; background: none; border: dashed 1px;}
-    #about iframe{position: absolute; left:50%; margin:0 0 0 -750px;}
-    #about iframe:nth-of-type(2){display: none;}
-    #about iframe:nth-of-type(3){display: none;}
-    #about button img{width: 100%;}
-    #about button{width: 150px; position: absolute; top: 1100px; left: 50%; cursor: pointer;
-    transition: 0.3s;}
-    #about button:hover{transform: scale(1.1);}
-    #about button:nth-of-type(1){margin: 0 0 0 -750px;}
-    #about button:nth-of-type(2){margin: 0 0 0 -590px;}
-    #about button:nth-of-type(3){margin: 0 0 0 -430px;}
+    #about img{width: 1300px; position: absolute; left: 50%; margin: 0 0 0 -650px;}
     
-#story{width: 100%; height: 800px; background-color:  blanchedalmond;}
+#shield_box{width: 100%; height: auto; background-color:  rgb(255, 245, 232); padding:20px 0;}
+    .shield{width: 100%; height: 600px;}
+    .shield img{width: 40%; height: 100%; float: left; }
+    .shield div{float: left;margin: 150px 40px;}
+    .shield h2 {width: 600px;}
+    .shield p{width: 600px; font-size: 20px;}
+
+#ingredient_box{width: 100%; height: auto; background-color:;padding: 20px 0;}
+    .ingredient{width: 100%; height: 600px;}
+    .ingredient img{width: 40%; height: 100%; float:right;}
+    .ingredient div{float: right;margin: 150px 40px;}
+    .ingredient h2 {width: 600px;}
+    .ingredient p{width: 600px; font-size: 20px;}
    
-#history{width: 1500px; height:3500px;  margin:0 auto; position: relative;}
+#history_box{width: 100%; background-color:rgb(255, 245, 232) ;}   
+#history{width: 1200px; height:3400px;  margin:0 auto; position: relative; ;}
     #history .ou{display: inline-block; margin:50px 0 0 46.5%; width: 150px; font-size: 20px; font-weight: bold;}
     #history .our{width: 25px; margin: 20px auto 20px auto;}
-    #history h2{text-align: center; font-size: 30px;}
-    #history .history{border: 1px dashed #444; background:none; width: 0; height: 2000px;margin-top: 30px;
+    #history .starte{text-align: center; font-size: 30px; font-weight: normal;}
+    #history .history{border: 1px dashed #444; background:none; width: 0; height: 1900px;margin-top: 30px;
     margin-left: auto; margin-right: auto;} 
-    #history .year1{position: absolute; top: 550px; left: 47%; font-size: 40px;background-color: white;}
-    #history .year1-{width: 48px; position: absolute; top: 578px; left: 54%; background:none; border: 1px #444 dashed;}
-    #history .year2{position: absolute; top: 950px; left: 47%; font-size: 40px;background-color: white;}
-    #history .year2-{width: 48px; position: absolute; top: 978px; left: 42.5%; background:none; border: 1px #444 dashed;}
-    #history .year3{position: absolute; top: 1350px; left: 47%; font-size: 40px;background-color: white;}
-    #history .year3-{width: 48px; position: absolute; top: 1378px; left: 54%; background:none; border: 1px #444 dashed;}
-    #history .year4{position: absolute; top: 1750px; left: 47%; font-size: 40px;background-color: white;}
-    #history .year4-{width: 48px; position: absolute; top: 1778px; left: 42.5%; background:none; border: 1px #444 dashed;}
-    #history section{ width: 620px; position: absolute;}  
-    #history section img{width: 100%; border-radius: 1%;}
+    #history .year1{position: absolute; top: 520px; left: 45.5%; font-size: 40px;background-color: rgb(255, 245, 232);
+    font-family:"Blacksword"; padding: 10px 0;}
+    #history .year1-{width: 45px; position: absolute; top: 550px; left: 40%; background:none; border: 1px #444 dashed;}
+    #history .year2{position: absolute; top: 890px; left: 45.5%; font-size: 40px;background-color: rgb(255, 245, 232);
+    font-family:"Blacksword"; padding: 10px 0;}
+    #history .year2-{width: 45px; position: absolute; top: 915px; left: 56.5%; background:none; border: 1px #444 dashed;}
+    #history .year3{position: absolute; top: 1260px; left: 45.5%; font-size: 40px;background-color: rgb(255, 245, 232);
+    font-family:"Blacksword"; padding: 10px 0;}
+    #history .year3-{width: 45px; position: absolute; top: 1285px; left: 40%; background:none; border: 1px #444 dashed;}
+    #history .year4{position: absolute; top: 1610px; left: 45.5%; font-size: 40px;background-color: rgb(255, 245, 232);
+    font-family:"Blacksword";padding: 10px 0;}
+    #history .year4-{width: 45px; position: absolute; top: 1630px; left: 56.5%; background:none; border: 1px #444 dashed;}
+    #history section{ width: 450px; position: absolute;}  
+    #history section img{width: 100%; border-radius: 5px;}
     #history section p{font-size: 20px;}
     #history section hr{width: 30px; margin: 10px auto 10px 0; border: solid #333 1px;}
     #history section h2{font-size: 30px; text-align: left;}
-    #history .section1{top: 300px; right: 0;}
-    #history .section2{top: 700px; left: 0;}
-    #history .section3{top: 1100px; right: 0;}
-    #history .section4{top: 1500px; left: 0;}
-    #history .today{width: 100%; height: 1000px;}
-    #history .today h2{font-size: 40px; font-weight: normal; text-align: center;}
+    #history .section1{top: 340px; left: 0;}
+    #history .section2{top: 700px; right: 0;}
+    #history .section3{top: 1060px; left: 0;}
+    #history .section4{top: 1420px; right: 0;}
+    #history .today{width: 100%; height: 1000px; position: relative;}
+    #history .today h2{font-size: 40px; font-weight: normal; text-align: center; font-family:"Blacksword";}
     #history .today p{font-size: 20px; width: 600px; text-align: center; margin: 10px auto 10px auto;}
-    #history .today hr{width: 0; height: 50px; background: none; border: dashed 1px;
+    #history .today .Make{width: 0; height: 50px; background: none; border: dashed 1px;
     margin: 10px auto 10px auto;}
-    #history .today a{margin: 0  0 0 43.5%; font-size: 20px; font-weight: bold;}
-    #history .today img{margin: 15px 0 0 0;}
+    #history .Present1{width: 25px; height: 0; border: solid 1px; position: absolute;
+    top: 12px; left: 500px;}
+    #history .Present2{width: 25px; height: 0; border: solid 1px; position: absolute;
+    top: 12px; left: 670px;}
+    #history .today strong{font-size: 20px;}
+
+    .today iframe{width: 1200px; height: 690px; position: absolute; left: 50%; top: 450px; margin: 0 0 0 -600px;}
+    .today iframe:nth-of-type(2){display: none;}
+    .today iframe:nth-of-type(3){display: none;}
+    .today button img{width: 100%;}
+    .today button{width: 150px; margin: 20px 10px 0 10px; cursor: pointer;
+    transition: 0.3s;}
+    .today button:hover{transform: scale(1.1);}
+    .today button:nth-of-type(1){margin: 0 0 0 360px;}
