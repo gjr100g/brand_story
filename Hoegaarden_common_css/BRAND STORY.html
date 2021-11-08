@@ -39,6 +39,24 @@
                 $(".today iframe:nth-of-type(1)").hide();
             });
         });
+
+
+        $(document).ready(function() {
+            $(window).scroll( function(){
+                    
+                $('.opacity').each( function(i){
+                    
+                    var bottom_of_element = $(this).offset().top + $(this).outerHeight() / 3;
+                    var bottom_of_window = $(window).scrollTop() + $(window).height();
+                    
+                    if( bottom_of_window > bottom_of_element ){
+                        $(this).animate({'opacity':'1'},1500);
+                    }
+                    
+                }); 
+            });
+        });
+
     </script>
 
 </head>
@@ -90,7 +108,9 @@
         <div class="ingredient">
             <div class="img_ingredient"></div>
             <div>
-                <h2> 여과를 거치지 않은 백색의 맥주를 만들어 냈습니다</h2>
+                <p>About Beer</p>
+                <hr>
+                <h2>백색의 맥주를 만들어 냈습니다</h2>
                 <br><br>
                 <p>호가든은 맥주를 주조할 때에는 기본적으로
                     물, 맥아, 효모, 홉만이 사용되어야 한다는 독일의 ‘맥주순수령’과는 달리
@@ -99,75 +119,86 @@
                     
                     밀, 고수 씨앗, 그리고 오렌지 껍질을 사용해 완성된
                     호가든만의 은은한 향과 구름 거품이 담긴 특유의
-                    부드럽고 풍성한 맛의 호가든을 즐겨보세요.</p>   
-            </div>   
+                    부드럽고 풍성한 맛의 호가든을 즐겨보세요.</p>    
+                    <a href="#">제품 구경하기 →</a>   
+            </div>
+           
         </div>
     </div>  
     <div id="shield_box">
         <div class="shield">
             <div class="img_shield"></div>
             <div>
-                <h2> 여과를 거치지 않은 백색의 맥주를 만들어 냈습니다</h2>
+                <p>About design</p>
+                <hr>
+                <h2>방패 마크에 담은 550여 년의 역사</h2>
                 <br><br>
-                <p>호가든은 맥주를 주조할 때에는 기본적으로
-                    물, 맥아, 효모, 홉만이 사용되어야 한다는 독일의 ‘맥주순수령’과는 달리
-                    허브, 과일 등을 사용해다양한 맛의 맥주를 개발한 벨기에의 사람들의
-                    창의성과 오랜 정통 기법의 만남으로 탄생했습니다.
-                    
-                    밀, 고수 씨앗, 그리고 오렌지 껍질을 사용해 완성된
-                    호가든만의 은은한 향과 구름 거품이 담긴 특유의
-                    부드럽고 풍성한 맛의 호가든을 즐겨보세요.</p>   
+                <p>호가든 캔맥에 그려진 방패모양 2가지는 전통있는 호가든의 역사를 강조하는
+                     디자인이라고 하는데요, 첫번째 방패는 호가든의 양조자 조합을 상징하고 두번째 
+                     방패는 호가든 지역을 다스렸던 주교를 의미한다고 합니다 이 2가지를 디자인 요소로
+                      활용함으로서 전통잇는 맥주임을 강조 하고 있습니다.</p>   
             </div>   
         </div>
     </div> 
     </div>
 <div id="history_box">
     <div id="history">
-        <p class="ou">our history</p>
-        <hr class="our">
-        <h2 class="starte">570년 역사를 이어 온<br>
-            정통 오리지널 벨기에 밀맥주,<br>
-             호가든</h2>
-        <hr class="history">
-        <p class="year1">1445</p> 
-        <hr class="year1-">
-        <p class="year2">1709</p> 
-        <hr class="year2-">
-        <p class="year3">1965</p> 
-        <hr class="year3-">
-        <p class="year4">1985</p> 
-        <hr class="year4-">
-        <section class="section1">
+        <p class="ou , opacity">our history</p>
+        <hr class="our , opacity">
+        <h2 class="starte , opacity">570년 역사를 이어 온<br>
+            우리의 역사</h2>
+        <hr class="history1 , opacity">
+        <p class="year1 , opacity">1445</p> 
+        <hr class="history2 , opacity">
+        <hr class="year1- , opacity">
+        <p class="year2 , opacity">1709</p>
+        <hr class="history3 , opacity"> 
+        <hr class="year2- , opacity">
+        <p class="year3 , opacity">1965</p>
+        <hr class="history4 , opacity"> 
+        <hr class="year3- , opacity">
+        <p class="year4 , opacity">1985</p>
+        <hr class="history5 , opacity"> 
+        <hr class="year4- , opacity">
+        <section class="section1 , opacity">
+            <h2>Restaurant opening</h2>
+            <hr>
+            <img src="img/BRAND_STORY/monk.jpg" alt="Hoegaarden">
+            <p>호가든은 1445년 벨기에 비가르덴 지방의 수도원문화가
+               호가든(Hoegaarden)마을로
+                전파되면서 탄생한 맥주입니다.
+                호가든 마을 사람들은 자연에서 얻은
+                최상의 밀을 수확하고, 깨끗한 재료를 엄선하여
+                여과를 거치지 않은 백색의 맥주를 만들어 냈습니다.</p>
+        </section>
+        <section class="section2 , opacity">
             <h2>Restaurant opening</h2>
             <hr>
             <img src="img/BRAND_STORY/Hoegaarden.jpg" alt="Hoegaarden">
-            <p>Hoegaarden 수도사들은 밀 맥주를 맛나게 만든 최초의 사람들이었습니다. 오렌지 껍질과 고수풀로 
-                실험하기 전에는 밀 맥주는 엄청나게 신맛이 났습니다.</p>
+            <p>1709년 호가든(Hoegaarden)마을에는 12개의 양조장이 있었으며, 1745년에는 30개로 늘어 났습니다. 
+                당시 호가든 인구가 2,000명이라고 하니 인구수애 비해 얼마나 많은 양조장이 있어는지 알 수 
+                있습니다.</p>
         </section>
-        <section class="section2">
-            <h2>Restaurant opening</h2>
-            <hr>
-            <img src="img/BRAND_STORY/Hoegaarden.jpg" alt="Hoegaarden">
-            <p>1709년에는 호가든애는 12개의 양조장이 있었으며, 1745년에는 30개로 늘어 났다. 당시 
-                호가든 인구가 2,000명이라고 하니 인구수애 비해 얼마나 많은 양조장이 있어는지 알 수 있다.</p>
-        </section>
-        <section class="section3">
+        <section class="section3 , opacity">
             <h2>Restaurant opening</h2>
             <hr>
             <img src="img/BRAND_STORY/PierreCelis.jpg" alt="Hoegaarden">
             <p>1957년에는 마을의 마지막 양조장이 문을 닫았습니다. 그러나 1965년에 마을의 우유 
-                배달원인 피에르 셀리스(Pierre Celis)는 다른 마을 사람들과 함께 행동을 취하고
-                 원래 조리법을 보존하기로 결정했습니다. 처음에 그의 우유 창고에서 양조를 시작한 
-                 이 작업은 Hoegaarden 양조의 수도원적 과거에 대한 경의를 표하는 "The Vault"로 빠르게 확장되었습니다. </p>
+                배달원인 피에르 셀리스(Pierre Celis)는 호가든의 원래 조리법을 보존하기로 결정했습니다. 
+                이에 1966년 센리스는 자신의 이름을 딴 센리스 양조장을 설립하였고 그해 3월부터 밀맥주를
+                생산하게 되었습니다</p>
         </section>
-        <section class="section4">
+        <section class="section4 , opacity">
             <h2>Restaurant opening</h2>
             <hr>
             <img src="img/BRAND_STORY/brewery.jpg" alt="Hoegaarden">
-            <p>1985년까지 새로운 Hoegaarden 양조장은 수백 년에 걸친 현대적인 기술과 조리법을 
-                활용하여 연간 62,000배럴 이상의 맥주를 생산하고 있었습니다</p>
+            <p>1985년 호가든에는 큰 불이 나게됩니다 이에 센리스는 양조장을 재건하기 위해 벨기에의 인터브루
+                라는회사에 지분의 45%을 내주고 대출을 받게 됩니다 이 대출의 대가로 맥주 생산 방식에 압박을
+                받기 시작한 센리스는 이러한 변화에 환멸을 느끼며 양조장을 완전히 팔고 미국으로 건너가 또다른
+                양조장을 만들게 되었습니다. 
+            </p>
         </section>
-        <section class="today">
+        <section class="today , opacity">
             <h2>Present</h2>
             <hr class="Present1"> <hr class="Present2">
             <p>원조 벨기에 밀맥주 호가든은 벨기에에서

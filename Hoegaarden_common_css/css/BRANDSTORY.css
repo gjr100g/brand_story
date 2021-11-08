@@ -1,48 +1,57 @@
 @charset "UTF-8";
 @font-face{src: url(../Font/PinyonScript-Regular.ttf);font-family:"Blacksword";}
-*{color: #333;}
+
+*{color: #333; box-sizing: border-box;}
 hr{border:solid#333 1px;}
-#about{width: 100%; height: 1000px; margin: 0 auto; position: relative;}
+#about{width: 100%; height: 1060px; margin: 0 auto; position: relative;}
     #about p{text-align: center; font-size: 28px; margin: 160px 0 0 0 ;}
     .about{width: 25px; margin: 20px auto 20px auto}
     #about h2{text-align: center; font-size: 35px;}
     .about_img{height: 35px; width: 0; margin: 20px auto 20px auto; background: none; border: dashed 1px;}
-    #about img{width: 1300px; position: absolute; left: 50%; margin: 0 0 0 -650px;}
+    #about img{width: 1300px; position: absolute; left: 50%; margin: 0 0 0 -650px;
+    border-radius: 10px;}
     
-#ingredient_box{width: 100%; height: auto; background-color:  rgb(255, 245, 232); padding:20px 0;}
+#ingredient_box{width: 100%; height: auto; background-color:  rgb(255, 245, 232); padding:40px 0;}
     .ingredient{width: 100%; height: 600px;}
     .ingredient .img_ingredient{margin: 0; width: 40%; height: 100%; float: left;  background-image:url(../img/BRAND_STORY/or.png);
     background-repeat: no-repeat;background-size:cover; background-position: center; border-radius: 10px;}
-    .ingredient div{float: left;margin: 150px 40px;}
-    .ingredient h2 {width: 600px;}
-    .ingredient p{width: 600px; font-size: 20px;}
+    .ingredient div{float: left;margin: 130px 40px;}
+    .ingredient h2 {width: 600px; font-size: 30px; margin: 0;}
+    .ingredient p{width: 600px; font-size: 20px; margin: 0;}
+    .ingredient p:nth-of-type(1){font-weight: bold;}
+    .ingredient p:nth-of-type(2){margin: 0 0 15px 0;}
+    .ingredient hr{width: 110px; margin: 20px 0; border: solid rgb(122, 122, 122) 1px;}
+    .ingredient a{display: inline; font-weight: bold; display: inline-block; transition: 0.5s;}
+    .ingredient a:hover{text-decoration:underline; transform:scale(1.1);}
 
-#shield_box{width: 100%; height: auto; padding: 20px 0;}
+#shield_box{width: 100%; height: auto; padding: 40px 0;}
     .shield{width: 100%; height: 600px;}
     .shield .img_shield{margin: 0; width: 40%; height: 100%; float: right; background-image:url(../img/BRAND_STORY/shield.jpg);
     background-repeat: no-repeat;background-size:cover; background-position: center; border-radius: 10px;}
-    .shield div{float: right;margin: 150px 40px;}
-    .shield h2 {width: 600px; }
-    .shield p{width: 600px; font-size: 20px;}
+    .shield div{float: right;margin: 130px 40px;}
+    .shield h2 {width: 600px; font-size: 30px; margin: 0;}
+    .shield p{width: 600px; font-size: 20px; margin: 0;}
+    .shield p:nth-of-type(1){font-weight: bold;}
+    .shield hr{width: 130px; margin: 20px 0; border: solid rgb(122, 122, 122) 1px;}
    
 #history_box{width: 100%; background-color:rgb(255, 245, 232) ;}   
 #history{width: 1200px; height:3400px;  margin:0 auto; position: relative; ;}
-    #history .ou{display: inline-block; margin:50px 0 0 46.5%; width: 150px; font-size: 20px; font-weight: bold;}
+    .opacity{opacity: 0;}
+    #history .ou{display: inline-block; margin:50px 0 0 45.8%; width: 150px; font-size: 20px; font-weight: bold;}
     #history .our{width: 25px; margin: 20px auto 20px auto;}
     #history .starte{text-align: center; font-size: 30px; font-weight: normal;}
-    #history .history{border: 1px dashed #444; background:none; width: 0; height: 1900px;margin-top: 30px;
-    margin-left: auto; margin-right: auto;} 
-    #history .year1{position: absolute; top: 520px; left: 45.5%; font-size: 40px;background-color: rgb(255, 245, 232);
-    font-family:"Blacksword"; padding: 10px 0;}
+    #history .history1{border: 1px dashed #444; background:none; width:0; height:230px; margin: 30px auto 0 auto;} 
+    #history .history2{border: 1px dashed #444; background:none; width:0; height:250px; margin: 30px auto 0 auto;} 
+    #history .history3{border: 1px dashed #444; background:none; width:0; height:265px; margin: 30px auto 0 auto;} 
+    #history .history4{border: 1px dashed #444; background:none; width:0; height:235px; margin: 30px auto 0 auto;} 
+    #history .history5{border: 1px dashed #444; background:none; width:0; height:400px; margin: 30px auto 0 auto;} 
+    #history .year1{font-size: 40px; text-align: center; font-family:"Blacksword"; margin: 30px;}
     #history .year1-{width: 45px; position: absolute; top: 550px; left: 40%; background:none; border: 1px #444 dashed;}
-    #history .year2{position: absolute; top: 890px; left: 45.5%; font-size: 40px;background-color: rgb(255, 245, 232);
-    font-family:"Blacksword"; padding: 10px 0;}
+    #history .year2{font-size: 40px; text-align: center; font-family:"Blacksword"; margin: 30px;}
     #history .year2-{width: 45px; position: absolute; top: 915px; left: 56.5%; background:none; border: 1px #444 dashed;}
-    #history .year3{position: absolute; top: 1260px; left: 45.5%; font-size: 40px;background-color: rgb(255, 245, 232);
-    font-family:"Blacksword"; padding: 10px 0;}
+    #history .year3{font-size: 40px; text-align: center; font-family:"Blacksword"; margin: 30px;}
     #history .year3-{width: 45px; position: absolute; top: 1285px; left: 40%; background:none; border: 1px #444 dashed;}
-    #history .year4{position: absolute; top: 1610px; left: 45.5%; font-size: 40px;background-color: rgb(255, 245, 232);
-    font-family:"Blacksword";padding: 10px 0;}
+    #history .year4{font-size: 40px; text-align: center; font-family:"Blacksword"; margin: 30px;}
     #history .year4-{width: 45px; position: absolute; top: 1630px; left: 56.5%; background:none; border: 1px #444 dashed;}
     #history section{ width: 450px; position: absolute;}  
     #history section img{width: 100%; border-radius: 5px;}
@@ -54,7 +63,8 @@ hr{border:solid#333 1px;}
     #history .section3{top: 1060px; left: 0;}
     #history .section4{top: 1420px; right: 0;}
     #history .today{width: 100%; height: 1000px; position: relative;}
-    #history .today h2{font-size: 40px; font-weight: normal; text-align: center; font-family:"Blacksword";}
+    #history .today h2{font-size: 40px; font-weight: normal; text-align: center; font-family:"Blacksword";
+    margin: 20px;}
     #history .today p{font-size: 20px; width: 600px; text-align: center; margin: 10px auto 10px auto;}
     #history .today .Make{width: 0; height: 50px; background: none; border: dashed 1px;
     margin: 10px auto 10px auto;}
@@ -64,7 +74,8 @@ hr{border:solid#333 1px;}
     top: 12px; left: 670px;}
     #history .today strong{font-size: 20px;}
 
-    .today iframe{width: 1200px; height: 690px; position: absolute; left: 50%; top: 450px; margin: 0 0 0 -600px;}
+    .today iframe{width: 1200px; height: 690px; position: absolute; left: 50%; top: 450px; margin: 0 0 0 -600px;
+    border-radius: 10px;}
     .today iframe:nth-of-type(2){display: none;}
     .today iframe:nth-of-type(3){display: none;}
     .today button img{width: 100%;}
