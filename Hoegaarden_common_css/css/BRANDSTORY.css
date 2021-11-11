@@ -79,7 +79,7 @@ hr{border:solid#333 1px;}
             #history .today strong{font-size: 10px;}
     
             .today iframe{width:300px;height: 170px;margin: 10px auto;display: block;
-            border-radius: 10px;}
+            border-radius: 10px; border: none;}
             .today iframe:nth-of-type(2){display: none;}
             .today iframe:nth-of-type(3){display: none;}
             .today button img{width: 100%;}
@@ -167,7 +167,7 @@ hr{border:solid#333 1px;}
         #history .today strong{font-size: 20px;}
 
         .today iframe{max-width: 600px; max-height: 360px;margin: 20px auto; display: block;
-        border-radius: 10px;}
+        border-radius: 10px; border: none;}
         .today iframe:nth-of-type(2){display: none;}
         .today iframe:nth-of-type(3){display: none;}
         .today button img{width: 100%;}
@@ -251,7 +251,7 @@ hr{border:solid#333 1px;}
         #history .today strong{font-size: 20px;}
 
         .today iframe{max-width: 1200px; max-height: 680px;margin: 40px auto;display: block;
-            border-radius: 10px;}
+            border-radius: 10px; border: none;}
         .today iframe:nth-of-type(2){display: none;}
         .today iframe:nth-of-type(3){display: none;}
         .today button img{width: 100%;}
